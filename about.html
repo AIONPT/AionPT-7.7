@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre o AionPT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+      font-family: 'Cinzel', serif;
+      background: black;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.85);
+    }
+
+    .hero-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 20px 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-area img {
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
+    }
+
+    .logo-area span {
+      color: #FFD700;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #FFD700;
+      margin-left: 24px;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      z-index: 2;
+    }
+
+    .about-content {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      max-width: 800px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    }
+
+    .about-content h1 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .footer {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      position: relative;
+      z-index: 2;
+    }
+  
+.btn-download, .btn-download2 {
+  background: #e67e22;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-top: 40px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.btn-download:hover, .btn-download2:hover {
+  background: #f39c12;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-area span {
+    font-size: 1.4em;
+  }
+
+  .status-section {
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 20px;
+  }
+
+  .status-box {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .about-content {
+    padding: 20px;
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="./background.mp4" type="video/mp4">
+    O teu navegador não suporta vídeo em background.
+  </video>
+
+  <header class="hero-header">
+    <div class="logo-area">
+      <img src="icon.ico" alt="Logo">
+      <span>Aion Portugal - 7.7</span>
+    </div>
+    <nav>
+      <a href="index.html">Homepage</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about-content">
+      <h1>Sobre o AionPT</h1>
+      <p>O AionPT é um servidor privado na versão 7.7 criado para reviver a nostalgia do Aion clássico, com um ambiente equilibrado, sem Pay2Win, focado em PvP e PvE de qualidade. Aqui, os jogadores têm acesso a um mundo justo, com eventos personalizados, suporte ativo e uma comunidade em crescimento.</p>
+      <br>
+      <p>Desde o lançamento, a nossa missão tem sido oferecer uma experiência estável, divertida e competitiva, respeitando os jogadores e o tempo que investem. 
+        <br>
+        Junta-te à batalha e conquista o que é teu! 4.9 - 2024 | 5.8 - 2025 | 7.7 NOW </p>
+        <br\>
+    </div>
+  </main>
+
+  <div class="footer">
+    <p>© 2025 AionPT. Todos os direitos reservados.</p>
+  </div>
+</body>
+</html>
